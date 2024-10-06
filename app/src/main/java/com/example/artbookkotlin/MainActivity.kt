@@ -72,6 +72,7 @@ class MainActivity : AppCompatActivity() {
 
         if(item.itemId == R.id.add_art_item){
             val intent = Intent(this@MainActivity,ArtActivity::class.java)
+            intent.putExtra("info","new")
             startActivity(intent)
         }
 
